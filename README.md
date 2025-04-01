@@ -7,10 +7,10 @@
 There are no secrets to installing it, just use your favorite dependency manager. Here is an example using NPM:
 
 ```cmd
-npm i @xcrap/axios-client @xcrap/core
+npm i @xcrap/axios-client @xcrap/core @xcrap/parser
 ```
 
-> You need to install `@xcrap/parser` as well because I left it as `peerDependency`, which means that the `@xcrap/core` package needs `@xcrap/parser` as a dependency, however, it will use whatever the user has installed in the project.
+> You need to install `@xcrap/core` and `@xcrap/parser` as well because I left them as `peerDependencies`, which means that the package needs `@xcrap/core` and `@xcrap/parser` as dependencies, however, the ones that the user has installed in the project will be used.
 
 ## 🚀 Usage
 
