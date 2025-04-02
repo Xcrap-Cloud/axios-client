@@ -14,7 +14,9 @@ npm i @xcrap/axios-client @xcrap/core @xcrap/parser
 
 ## 🚀 Usage
 
-Like any HTTP client, `AxiosClient` has two methods: `fetch()` to make a request for a specific URL and `fetchMany()` to make requests for multiple URLs at the same time, being able to control concurrency and delays between requests. #### Example usage
+Like any HTTP client, `AxiosClient` has two methods: `fetch()` to make a request for a specific URL and `fetchMany()` to make requests for multiple URLs at the same time, being able to control concurrency and delays between requests.
+
+### Example usage
 
 ```ts
 import { AxiosClient } from "@xcrap/axios-client"
@@ -31,7 +33,7 @@ import { extract } from "@xcrap/parser"
 })();
 ```
 
-Adding a proxy
+### Adding a proxy
 
 In an HTTP client that extends `BaseClient` we can add a proxy in the constructor as we can see in the following example:
 
@@ -71,7 +73,7 @@ function randomProxy() {
 
 const client = new AxiosClient({ proxy: randomProxy })
 ```
-#### Using a custom User Agent
+### Using a custom User Agent
 
 In a client that extends `BaseClient` we can also customize the `User-Agent` of the requests. We can do this in two ways:
 
@@ -97,7 +99,7 @@ function randomUserAgent() {
 const client = new AxiosClient({ userAgent: randomUserAgent })
 ```
 
-#### Using custom Proxy URL
+### Using custom Proxy URL
 
 In a client that extends `BaseClient` we can use proxy URLs, I don't know how to explain to you how they work, but I kind of discovered this kind of porxy when I was trying to solve the CORS problem by making a request on the client side, and then I met the *CORS Proxy*. Here I have a [template](https://gist.github.com/marcuth/9fbd321b011da44d1287faae31a8dd3a) for one for CloudFlare Workers in case you want to roll your own.
 
