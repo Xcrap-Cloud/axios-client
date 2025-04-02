@@ -1,6 +1,6 @@
 {
   "name": "@xcrap/axios-client",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Xcrap Axios Client is a package of the Xcrap framework that implements an HTTP client using the Axios library.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
