@@ -78,7 +78,7 @@ In a client that extends `BaseClient` we can also customize the `User-Agent` of 
 1. **By providing a `userAgent` string:
 
 ```ts
-const client = new HttpClient({ userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" })
+const client = new AxiosClient({ userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" })
 ```
 
 2. **By providing a function that will generate a `userAgent`:**
