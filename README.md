@@ -73,6 +73,7 @@ function randomProxy() {
 
 const client = new AxiosClient({ proxy: randomProxy })
 ```
+
 ### Using a custom User Agent
 
 In a client that extends `BaseClient` we can also customize the `User-Agent` of the requests. We can do this in two ways:
