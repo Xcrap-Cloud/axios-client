@@ -35,6 +35,6 @@
     "axios-rate-limit": "^1.4.0"
   },
   "peerDependencies": {
-    "@xcrap/core": "^0.0.3"
+    "@xcrap/core": "*"
   }
 }
