@@ -1,16 +1,16 @@
 {
   "name": "@xcrap/axios-client",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Xcrap Axios Client is a package of the Xcrap framework that implements an HTTP client using the Axios library.",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist/*",
     "!/**/__tests__"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "build": "tsc",
     "test": "jest"
   },
   "keywords": [
@@ -24,15 +24,10 @@
   "license": "MIT",
   "type": "commonjs",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^28.0.3",
-    "@rollup/plugin-node-resolve": "^16.0.1",
-    "@rollup/plugin-typescript": "^12.1.2",
     "@types/node": "^22.13.16",
     "jest": "^29.7.0",
-    "rollup": "^4.38.0",
     "ts-jest": "^29.3.1",
     "ts-node": "^10.9.2",
-    "tslib": "^2.8.1",
     "typescript": "^5.8.2"
   },
   "dependencies": {
