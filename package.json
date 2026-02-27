@@ -24,8 +24,8 @@
   "license": "MIT",
   "type": "commonjs",
   "devDependencies": {
-    "@types/node": "^22.13.16",
-    "jest": "^29.7.0",
+    "@types/node": "^25.3.0",
+    "jest": "^30.2.0",
     "ts-jest": "^29.3.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
